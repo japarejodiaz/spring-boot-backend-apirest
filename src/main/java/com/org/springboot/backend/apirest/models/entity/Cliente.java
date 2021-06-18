@@ -14,26 +14,26 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name="clientes")
-public class Cliente implements Serializable{
-	
+@Table(name = "clientesss")
+public class Cliente implements Serializable {
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@Column(name = "nombre", length = 50)
 	private String nombre;
-	
+
 	@Column(name = "apellido", length = 50)
 	private String apellido;
-	
+
 	@Column(name = "email", length = 200)
 	private String email;
-	
-	@Column(name="create_at")
+
+	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
-	
+
 	@PrePersist
 	public void PrePersist() {
 		createAt = new Date();

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.org.springboot.backend.apirest.models.entity.Cliente;
 import com.org.springboot.backend.apirest.models.services.IClienteService;
 
-@CrossOrigin(origins = { "http://localhost:4200" })
+@CrossOrigin(origins = { "http://10.141.3.42:9999/isb/uv/routine" })
 @RestController
 @RequestMapping("/api")
 public class SiseRestController {
